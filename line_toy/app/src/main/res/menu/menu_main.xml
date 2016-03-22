@@ -1,0 +1,62 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item
+        android:icon="@drawable/menu_setting"
+        android:orderInCategory="200"
+        android:title="設定"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/menu_shake_period"
+                android:title="設定擺動週期" />
+            <item
+                android:id="@+id/menu_music"
+                android:title="開啟音樂" />
+            <item
+                android:id="@+id/menu_vibrate"
+                android:title="開啟震動" />
+        </menu>
+    </item>
+
+
+    <item
+        android:id="@+id/menu_bg"
+        android:icon="@drawable/menu_default"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/menu_beach"
+                android:icon="@drawable/menu_beach"
+                android:title="大太陽" />
+            <item
+                android:id="@+id/menu_sunrise"
+                android:icon="@drawable/menu_sunrise"
+                android:title="日出" />
+            <item
+                android:id="@+id/menu_cloudy"
+                android:icon="@drawable/menu_cloudy"
+                android:title="陰天" />
+            <item
+                android:id="@+id/menu_night"
+                android:icon="@drawable/menu_night"
+                android:title="夜晚" />
+            <item
+                android:id="@+id/menu_shake"
+                android:icon="@drawable/menu_phone_shake"
+                android:title="搖動偵測模式" />
+            <item
+                android:id="@+id/menu_detect_sound"
+                android:icon="@drawable/menu_microphone"
+                android:title="聲音偵測模式" />
+            <item
+                android:id="@+id/menu_light_mode"
+                android:icon="@drawable/menu_sun"
+                android:title="太陽能感光模式" />
+        </menu>
+    </item>
+
+</menu>

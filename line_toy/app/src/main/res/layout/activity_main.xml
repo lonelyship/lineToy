@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity"
+   >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/iv_bg"
+        android:scaleType="fitXY"
+        android:src="@drawable/earth" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/iv_base_2"
+        android:src="@drawable/base"
+        android:layout_alignTop="@+id/iv_base_1"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:id="@+id/iv_bear_body"
+        android:src="@drawable/bearbody"
+        android:layout_marginTop="-10dp"
+        android:layout_below="@+id/iv_bear_head"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/iv_bear_head"
+        android:src="@drawable/bearhead"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/iv_base_1"
+        android:src="@drawable/base"
+        android:layout_below="@+id/iv_bear_body"
+        android:layout_alignLeft="@+id/iv_moon_head"
+        android:layout_alignStart="@+id/iv_moon_head"
+        android:layout_marginLeft="-11dp"
+        android:layout_marginTop="-10dp" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="70dp"
+        android:id="@+id/iv_moon_body"
+        android:src="@drawable/moonbody"
+        android:layout_alignTop="@+id/iv_bear_body"
+        android:layout_alignRight="@+id/iv_moon_head"
+        android:layout_alignEnd="@+id/iv_moon_head"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="-3dp" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/iv_moon_head"
+        android:src="@drawable/moonhead"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="40dp"
+        android:layout_alignTop="@+id/iv_bear_head"
+        android:layout_toLeftOf="@+id/iv_bear_head"
+        android:layout_toStartOf="@+id/iv_bear_head" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/iv_base_3"
+        android:src="@drawable/base"
+        android:layout_alignTop="@+id/iv_base_2"
+        android:layout_alignLeft="@+id/iv_rabbit_head"
+        android:layout_alignStart="@+id/iv_rabbit_head"
+        android:layout_marginLeft="-10dp" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:id="@+id/iv_rabbit_body"
+        android:src="@drawable/rabbitbody"
+        android:layout_below="@+id/iv_rabbit_head"
+        android:layout_alignRight="@+id/iv_rabbit_head"
+        android:layout_alignEnd="@+id/iv_rabbit_head"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="-2dp" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/iv_rabbit_head"
+        android:src="@drawable/rabbithead"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="39dp"
+        android:layout_alignTop="@+id/iv_bear_head"
+        android:layout_toRightOf="@+id/iv_base_2"
+        android:layout_toEndOf="@+id/iv_base_2" />
+
+</RelativeLayout>
